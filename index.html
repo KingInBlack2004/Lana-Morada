@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lana Morada Restaurante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">Lana Morada</div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#suscripcion">Suscríbete</a></li>
+      </ul>
+    </nav>
+    <!-- Carrusel de imágenes -->
+    <section id="inicio" class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <img src="assets/carrusel1.jpg" alt="Ambiente acogedor en Lana Morada">
+          <div class="carousel-caption">
+            <h1>Bienvenido a Lana Morada</h1>
+            <p>Descubre una experiencia familiar, accesible y amena.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/carrusel2.jpg" alt="Platillos gourmet de Lana Morada">
+          <div class="carousel-caption">
+            <h1>Sabor y tradición</h1>
+            <p>Platillos únicos para compartir y disfrutar.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/carrusel3.jpg" alt="Eventos en Lana Morada">
+          <div class="carousel-caption">
+            <h1>Momentos inolvidables</h1>
+            <p>Un espacio para tus mejores recuerdos.</p>
+          </div>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="menu" class="menu">
+      <h2>Nuestro Menú</h2>
+      <ul>
+        <li>Tacos gourmet</li>
+        <li>Carnes premium</li>
+        <li>Opciones veganas</li>
+        <li>Postres artesanales</li>
+      </ul>
+    </section>
+    <section id="suscripcion" class="subscribe">
+      <h2>Suscríbete para recibir noticias y promociones</h2>
+      <form action="suscripcion.php" method="POST">
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+    <section id="valores" class="valores">
+      <h2>Valores de marca</h2>
+      <div class="valores-grid">
+        <div>
+          <h3>Familiar</h3>
+          <p>Creamos un ambiente acogedor y cálido que refleja la esencia de un hogar lejos de casa. Fomentamos la conexión entre familias, proporcionando espacios diseñados para compartir momentos significativos y fortalecer los lazos familiares.</p>
+        </div>
+        <div>
+          <h3>Accesible</h3>
+          <p>La accesibilidad es fundamental. Ofrecemos experiencias de alta calidad al alcance de todos, buscando proporcionar un acceso equitativo y tranquilidad.</p>
+        </div>
+        <div>
+          <h3>Ameno</h3>
+          <p>Ofrecemos una experiencia amena, desde actividades emocionantes hasta momentos de relajación, garantizando que cada visita sea placentera y enriquecedora.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2025 Lana Morada. Todos los derechos reservados.
+  </footer>
+  <script src="carousel.js"></script>
+</body>
+</html>
